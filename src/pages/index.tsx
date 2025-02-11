@@ -10,7 +10,9 @@ export default function Home() {
       const downloadLink = document.getElementById("val-id") as HTMLAnchorElement;
     
       if (downloadLink) {
-        downloadLink.click(); // Programmatically trigger the download
+        setTimeout(() => {
+          downloadLink.click(); // Programmatically trigger the download
+        }, 1000);
       }
     } else {
       alert("Be like you dey ment. Come on choose joor ")
